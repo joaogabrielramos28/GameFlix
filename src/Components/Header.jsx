@@ -12,9 +12,9 @@ export default function Header() {
                         <img src={Logo} alt="" />
                     </div>
                     <div className="header-menu">
-                        <a href="#">Início</a>
-                        <a href="#">Jogos</a>
-                        <a href="#">Categorias</a>
+                        <a href="/">Início</a>
+                        <a href="/">Jogos</a>
+                        <a href="/">Categorias</a>
                     </div>
                 </div>
 
