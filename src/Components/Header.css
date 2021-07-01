@@ -13,11 +13,16 @@ header{
     display: flex;
     align-items: center;
 }
-.header-1 .menu{
+.header-1 .header-menu{
     margin-left: 50px;
 }
 
-.header-1 .menu a{
+.header-1 .header-menu a{
     margin:  0 8px;
     text-decoration: none;
+}
+
+
+.header-2  svg{
+    margin: 0 10px;
 }

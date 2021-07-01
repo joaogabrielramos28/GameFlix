@@ -8,10 +8,10 @@ export default function Header() {
         <div className="navbar">
             <header>
                 <div className="header-1">
-                    <div className="logo">
+                    <div className="header-logo">
                         <img src={Logo} alt="" />
                     </div>
-                    <div className="menu">
+                    <div className="header-menu">
                         <a href="#">Início</a>
                         <a href="#">Jogos</a>
                         <a href="#">Categorias</a>
@@ -19,9 +19,11 @@ export default function Header() {
                 </div>
 
                 <div className="header-2">
-                    <AiOutlineSearch  color={'red'}/>
-                    <AiFillHeart color={'red'} />
-                    <IoMdSettings color={'red'} />
+
+                        <AiOutlineSearch  color={'red'}/>
+                        <AiFillHeart color={'red'} />
+                        <IoMdSettings color={'red'} />
+
                 </div>
             </header>
         </div>

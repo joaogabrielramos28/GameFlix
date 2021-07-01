@@ -1,4 +1,3 @@
-import {react, useState } from "react";
 import Header from "./Components/Header";
 
 function App() {
