@@ -1,0 +1,23 @@
+.navbar{
+    width: 100%;
+    padding-top: 20px;
+}
+header{
+    max-width: 1440px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-1{
+    display: flex;
+    align-items: center;
+}
+.header-1 .menu{
+    margin-left: 50px;
+}
+
+.header-1 .menu a{
+    margin:  0 8px;
+    text-decoration: none;
+}
