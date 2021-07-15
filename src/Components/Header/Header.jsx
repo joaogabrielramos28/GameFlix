@@ -1,6 +1,6 @@
 import React from 'react'
 import {AiFillHeart,AiOutlineSearch,IoMdSettings} from 'react-icons/all'
-import Logo from '../assets/Logotipo.svg'
+import Logo from '../../assets/Logotipo.svg'
 import './Header.css'
 
 export default function Header() {
