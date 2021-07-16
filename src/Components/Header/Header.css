@@ -1,6 +1,8 @@
 .navbar{
     width: 100%;
     padding-top: 20px;
+    z-index: 100000000000;
+    overflow: hidden;
 }
 header{
     max-width: 1440px;
@@ -12,6 +14,7 @@ header{
 .header-1{
     display: flex;
     align-items: center;
+    padding: 0 25px;
 }
 .header-1 .header-menu{
     margin-left: 50px;
@@ -20,6 +23,12 @@ header{
 .header-1 .header-menu a{
     margin:  0 8px;
     text-decoration: none;
+    color: #FFFF;
+}
+
+.header-1 .header-menu a:hover{
+    opacity: .7;
+    transition: .5s ease;
 }
 
 

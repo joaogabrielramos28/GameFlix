@@ -20,9 +20,9 @@ export default function Header() {
 
                 <div className="header-2">
 
-                        <AiOutlineSearch  color={'red'}/>
-                        <AiFillHeart color={'red'} />
-                        <IoMdSettings color={'red'} />
+                        <AiOutlineSearch  color={'white'}/>
+                        <AiFillHeart color={'white'} />
+                        <IoMdSettings color={'white'} />
 
                 </div>
             </header>

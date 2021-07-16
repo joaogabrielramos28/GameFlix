@@ -1,10 +1,11 @@
 import Header from "./Components/Header/Header";
-
+import Highlight from "./Components/Highlight/highlight";
 function App() {
-  
-
   return (
-   <Header />
+    <>
+      <Header />
+      <Highlight />
+    </>
   );
 }
 
