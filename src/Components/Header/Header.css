@@ -34,4 +34,10 @@ header{
 
 .header-2  svg{
     margin: 0 10px;
+    cursor: pointer;
+}
+
+.header-2 svg:hover{
+    opacity: .8;
+    transition: .5s ease;
 }
