@@ -1,11 +1,15 @@
 import React from 'react'
 import "./gameSlider.css"
-function gameSlider() {
+import Cards from "../Cards/cards"
+function GameSlider() {
     return (
-        <div>
+        <div className="game-slider">
             
+            <h3>Ultimos jogos lançados</h3>
+            
+            <Cards />
         </div>
     )
 }
 
-export default gameSlider
+export default GameSlider
