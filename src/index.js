@@ -1,11 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
+import { DetailsProvider } from './context/gameDetails';
+
 
 
 ReactDOM.render(
-  
-    <App />,
+    <DetailsProvider >
+
+      <App />
+    </DetailsProvider>,
+    
   
   document.getElementById('root')
 );

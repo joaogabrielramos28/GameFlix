@@ -5,13 +5,13 @@
 }
 
 .highlight img{
-    width: 100vw;
+    width: 100%;
     height: 750px;
     object-fit: cover;
     position: absolute;
     top: 0;
     z-index: -1;
-    filter: brightness(60%);
+    
 }
 
 
@@ -55,4 +55,12 @@
     opacity: 0.9;
     transform: skew(5deg);
     transition: .7s ease;
+}
+
+.highlight a{
+    text-decoration: none;
+}
+
+.highlight span{
+    color: #FFFF;
 }

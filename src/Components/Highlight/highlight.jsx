@@ -3,22 +3,25 @@ import api from "../../api";
 import banner from "../../assets/banner.png";
 import {FaShoppingCart} from 'react-icons/fa'
 import "./highlight.css";
+import { DetailsContext } from "../../context/gameDetails";
 function Highlight() {
+  const {contextDetails} = React.useContext(DetailsContext)
+  console.log(contextDetails);
   return (
     <div className="highlight">
-      <img src={banner} alt="" />
+      <img src={contextDetails.thumbnail} alt="" />
 
       <div className="highlight-content">
-        <h2 className="game-title">Call of duty Warzone</h2>
+        <h2 className="game-title">{contextDetails.title}</h2>
+       
 
         <p className="game-desc">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, facere
-          reiciendis. Quo nisi in animi, dolor cupiditate, quia repellendus,
-          similique necessitatibus ex mollitia ducimus corrupti aliquam
-          molestiae rem soluta! Tempora?
+         {contextDetails.short_description}
         </p>
 
-        <button className="game-shop">Buy <FaShoppingCart size={"1rem"} /></button>
+        <span>{contextDetails.platform}, {contextDetails.release_date}</span>
+
+        <a target="_blank" href={contextDetails.game_url}><button className="game-shop">Buy <FaShoppingCart size={"1rem"} /></button></a>
       </div>
     </div>
   );
