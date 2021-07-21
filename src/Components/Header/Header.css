@@ -26,6 +26,10 @@ header{
     color: #FFFF;
 }
 
+.header-logo img{
+    height: 70px;
+}
+
 .header-1 .header-menu a:hover{
     opacity: .7;
     transition: .5s ease;

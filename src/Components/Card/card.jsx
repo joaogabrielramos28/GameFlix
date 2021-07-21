@@ -16,6 +16,10 @@ function Card(props) {
         console.error(err);
       });
   }, []);
+
+  if(props.api === "peoplePopularMovies"){
+    console.log(movies);
+  }
   return (
     <>
       {movies.map((movie) => (
@@ -24,7 +28,7 @@ function Card(props) {
             onClick={() => setContextDetails(movie)}
             key={movie.id}
             src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`}
-            alt={movie.name}
+            alt={movie.title}
             className={props.class}
           />
         </>

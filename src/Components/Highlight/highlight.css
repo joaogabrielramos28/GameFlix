@@ -6,7 +6,7 @@
 
 .highlight img{
     width: 100%;
-    height: 750px;
+    height: 850px;
     object-fit: cover;
     position: absolute;
     top: 0;
@@ -38,10 +38,10 @@
 
 }
 
-.highlight-content .game-shop{
-    padding: 8px 16px;
+.highlight-content .movie-play{
+    padding: 10px 20px;
     text-transform: uppercase;
-    width: 90px;
+    width: 130px;
     border-radius: 3px;
     border: none;
     outline: none;
@@ -52,10 +52,36 @@
     margin-top: 10px;
 }
 
-.highlight-content .game-shop:hover{
+.highlight-content .movie-info{
+    padding: 9px 20px;
+    text-transform: uppercase;
+    width: 180px;
+    border-radius: 3px;
+    color: #FFF;
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    cursor: pointer;
+    margin-top: 10px;
+    background-color: rgba(109,109,110,0.7);
+    
+}
+
+.highlight-content .movie-info:hover{
+    background-color: rgba(109,109,110,.8);
+}
+
+.highlight-content .movie-play:hover{
     opacity: 0.9;
     transform: skew(5deg);
     transition: .7s ease;
+}
+
+.movie-btn{
+    display: flex;
+    gap: 20px;
 }
 
 .highlight a{

@@ -6,7 +6,12 @@ export const api = {
     }),
     mostRatedMovies:axios.create({
         baseURL:"https://api.themoviedb.org/3/movie/top_rated?api_key=64969a9a439a9f3baba72e427c276e2e"
-    })
+    }),
+
+    upComingMovies:axios.create({
+        baseURL:"https://api.themoviedb.org/3/movie/upcoming?api_key=64969a9a439a9f3baba72e427c276e2e"
+    }),
+
 }
 
 

@@ -9,6 +9,8 @@ img{
     transform: translateX(-25%);
 }
 
+
+
 img:hover ~ img{
      transform: translateX(-25%);
 }

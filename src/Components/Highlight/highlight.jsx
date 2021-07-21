@@ -1,7 +1,6 @@
 import React from "react";
-import api from "../../api";
-import banner from "../../assets/banner.png";
-import {FaShoppingCart} from 'react-icons/fa'
+import {GrPlayFill} from 'react-icons/gr'
+import {AiOutlineInfoCircle} from 'react-icons/ai'
 import "./highlight.css";
 import { DetailsContext } from "../../context/moveDetails";
 function Highlight() {
@@ -19,8 +18,11 @@ function Highlight() {
         </p>
 
         <span>Release: {contextDetails.release_date}</span>
+        <div className="movie-btn">
+        <a target="_blank" ><button className="movie-play"> <GrPlayFill /> Play</button></a>
+        <a target="_blank" ><button className="movie-info"> <AiOutlineInfoCircle size={"1.5em"} /> More info</button></a>
 
-        <a target="_blank" href={contextDetails.game_url}><button className="game-shop">Buy <FaShoppingCart size={"1rem"} /></button></a>
+        </div>
       </div>
     </div>
   );

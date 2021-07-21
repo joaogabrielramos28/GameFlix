@@ -9,11 +9,11 @@ export default function Header() {
             <header>
                 <div className="header-1">
                     <div className="header-logo">
-                        <img src={Logo} alt="" />
+                        <img src="https://fontmeme.com/permalink/210721/2fefd85d65936456ca7740f4e60cbcf0.png" alt="" />
                     </div>
                     <div className="header-menu">
                         <a href="/">Início</a>
-                        <a href="/">Jogos</a>
+                        <a href="/">Filmes</a>
                         <a href="/">Categorias</a>
                     </div>
                 </div>
