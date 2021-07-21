@@ -1,0 +1,14 @@
+img{
+    flex: 0 0 19.7%;
+    margin: 0 2px;
+    transition: transform 300ms ease 100ms;
+}
+
+
+.cards:hover img{
+    transform: translateX(-25%);
+}
+
+img:hover ~ img{
+     transform: translateX(-25%);
+}

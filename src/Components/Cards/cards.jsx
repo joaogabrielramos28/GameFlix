@@ -1,29 +1,28 @@
-import React, { useEffect, useState } from "react";
+import React, { Fragment, useState } from "react";
 import "./cards.css";
-import Banner from "../../assets/banner.png";
-import api from '../../api'
-import { DetailsContext } from "../../context/gameDetails";
+import Card from '../Card/card'
+import { api } from "../../api";
+import Next from "../NextBtn/next";
+import Previous from "../previousBtn/previous";
 export default function Cards() {
-    const [games,setGames] = useState([{}])
-    const {setContextDetails} = React.useContext(DetailsContext)
-    useEffect(()=>{
-        api.get("/games").then((response)=>{
-            setGames(response.data)
-            setContextDetails(response.data[0])
-        }).catch((err)=>{
-            console.error(err)
-        })
-    },[])
+  
+  
   return (
+    <Fragment>
+    <h3 className="cards-title">Últimos lançamentos</h3>
       <div className="cards">
-          {games.filter(game=>game.id< 8
-          ).map((game)=>(
-              
-              <>
-              <img onClick={()=>setContextDetails(game)} key={game.id} src={`${game.thumbnail}`} alt={game.title} className="card-img" />
-             </>
-          ))}
+      <Next class={".card-img-1"} />
+      <Previous class={".card-img-1"} />
+        <Card api={api.popularMovies} class={"card-img-1"} />
       </div>
-     
+
+    <h3 className="cards-title">Mais avaliados</h3>
+      <div className="cards">
+      <Next class={".card-img-2"} />
+      <Previous class={".card-img-2"} />
+        <Card api={api.mostRatedMovies} class={"card-img-2"}/>
+      </div>
+
+    </Fragment>
   );
 }

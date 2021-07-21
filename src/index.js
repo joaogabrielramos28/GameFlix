@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
-import { DetailsProvider } from './context/gameDetails';
+import { DetailsProvider } from './context/moveDetails';
 
 
 

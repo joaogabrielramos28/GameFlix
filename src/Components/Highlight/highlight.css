@@ -11,6 +11,7 @@
     position: absolute;
     top: 0;
     z-index: -1;
+    filter: brightness(60%);
     
 }
 
@@ -29,9 +30,9 @@
 
 .highlight-content .game-desc{
     color: #FFF;
-    max-width: 350px;
+    max-width: 400px;
     font-size: 14px;
-    word-spacing: 1px;
+    word-spacing: 1.5px;
     font-weight: 400;
     margin: 25px 0 ;
 

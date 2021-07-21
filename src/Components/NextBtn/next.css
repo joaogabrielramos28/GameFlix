@@ -1,0 +1,16 @@
+.next-btn{
+    position: absolute;
+    right: 0;
+   padding: 50px 10px;
+   height: 100%;
+   z-index: 100000;
+   background-color: rgba(0, 0, 0, 0.349);
+   border: none;
+   outline: none;
+   cursor: pointer;
+}
+
+.next-btn:hover{
+    background-color: rgba(0, 0, 0, 0.249);
+    transition: 0.3s ease;
+}

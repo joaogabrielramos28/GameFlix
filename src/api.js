@@ -1,14 +1,12 @@
 import axios from 'axios'
 
-
-const api = axios.create({
-    baseURL:"https://free-to-play-games-database.p.rapidapi.com/api/",
-    headers: {
-        'x-rapidapi-key': '979268b1f7msh4dc2b406c7402c8p1a3af5jsn8b800d1812b1',
-       
-      }
-})
-
-export default api
+export const api = {
+    popularMovies : axios.create({
+        baseURL:"https://api.themoviedb.org/3/movie/popular?api_key=64969a9a439a9f3baba72e427c276e2e"
+    }),
+    mostRatedMovies:axios.create({
+        baseURL:"https://api.themoviedb.org/3/movie/top_rated?api_key=64969a9a439a9f3baba72e427c276e2e"
+    })
+}
 
 

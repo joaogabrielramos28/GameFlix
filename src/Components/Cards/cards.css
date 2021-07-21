@@ -2,21 +2,14 @@
     display: flex;
     padding: 0 20px;
     gap: 5px;
+    position: relative;
+}
+
+.cards-title{
+    
+    padding: 10px 15px;
+    color: #FFF;
 
 }
 
 
-.card-img{
-    flex: 0 0 19.7%;
-    margin: 0 2px;
-    transition: transform 300ms ease 100ms;
-}
-
-
-.cards:hover .card-img{
-    transform: translateX(-25%);
-}
-
-.card-img:hover ~ .card-img{
-     transform: translateX(-25%);
-}
