@@ -28,11 +28,7 @@ export default function Cards() {
       <Card api={api.upComingMovies} class={"card-img-3"}/>
       </div>
       <h3 className="cards-title">Populares</h3>
-      <div className="cards">
-      <Next class={".card-img-4"} />
-      <Previous class={".card-img-4"} />
-      <Card api={api.peoplePopularMovies} class={"card-img-4"}/>
-      </div>
+      
 
     </Fragment>
   );
