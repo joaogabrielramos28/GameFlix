@@ -9,7 +9,7 @@ export default function Header() {
             <header>
                 <div className="header-1">
                     <div className="header-logo">
-                        <img src="https://fontmeme.com/permalink/210721/2fefd85d65936456ca7740f4e60cbcf0.png" alt="" />
+                        <Link to="/"><img src="https://fontmeme.com/permalink/210721/2fefd85d65936456ca7740f4e60cbcf0.png" alt="" /></Link>
                     </div>
                     <div className="header-menu">
                         <Link to="/">Início</Link>
