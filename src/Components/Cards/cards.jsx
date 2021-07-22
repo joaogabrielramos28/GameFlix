@@ -8,6 +8,12 @@ export default function Cards() {
   
   return (
     <Fragment>
+      <h3 className="cards-title">Séries dignas de maratonas</h3>
+      <div className="cards">
+      <Next class={".card-img-3"} />
+      <Previous class={".card-img-3"} />
+      <Card api={api.tvShows} class={"card-img-3"}/>
+      </div>
     <h3 className="cards-title">Últimos lançamentos</h3>
       <div className="cards">
       <Next class={".card-img-1"} />
@@ -27,7 +33,6 @@ export default function Cards() {
       <Previous class={".card-img-3"} />
       <Card api={api.upComingMovies} class={"card-img-3"}/>
       </div>
-      <h3 className="cards-title">Populares</h3>
       
 
     </Fragment>
