@@ -10,9 +10,15 @@ export default function Cards() {
     <Fragment>
       <h3 className="cards-title">Séries dignas de maratonas</h3>
       <div className="cards">
-      <Next class={".card-img-3"} />
-      <Previous class={".card-img-3"} />
-      <Card api={api.tvShows} class={"card-img-3"}/>
+      <Next class={".card-img-4"} />
+      <Previous class={".card-img-4"} />
+      <Card api={api.tvShows} class={"card-img-4"}/>
+      </div>
+      <h3 className="cards-title">Em breve</h3>
+      <div className="cards">
+      <Next class={".card-img-5"} />
+      <Previous class={".card-img-5"} />
+      <Card api={api.movieWatchList} class={"card-img-5"}/>
       </div>
     <h3 className="cards-title">Últimos lançamentos</h3>
       <div className="cards">
