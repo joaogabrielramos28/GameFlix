@@ -1,9 +1,34 @@
-import React from 'react'
+import React, { useContext, useState } from 'react'
+import {DetailsContext} from '../../context/moveDetails'
 import {AiFillHeart,AiOutlineSearch,IoMdSettings} from 'react-icons/all'
 import './Header.css'
 import {Link} from 'react-router-dom'
 
 export default function Header() {
+    const [searchIsActive,SetSearchIsActive] = useState(false)
+    const [countClick, setCountClick] = useState(0)
+    const {setHighlightIsActive,searchMovie,SetSearchMovie} = useContext(DetailsContext)
+    const activeSearch = (e) =>{
+        if(e.target.value.length == 0){
+            setHighlightIsActive(true)
+
+        }else{
+            setHighlightIsActive(false)
+            SetSearchMovie(e.target.value)
+        }
+    }
+    
+    console.log(searchMovie)
+    const activeInputSearch = () =>{
+        setCountClick(countClick + 1)
+        if(countClick % 1 == 0){
+            SetSearchIsActive(true)
+        }
+    
+        if(countClick % 2 == 0){
+            SetSearchIsActive(false)
+        }
+    }
     return (
         <div className="navbar">
             <header>
@@ -19,10 +44,15 @@ export default function Header() {
                 </div>
 
                 <div className="header-2">
-
-                        <Link to="/search"><AiOutlineSearch  color={'white'}/></Link>
-                        <AiFillHeart color={'white'} />
-                        <IoMdSettings color={'white'} />
+                        {
+                            searchIsActive&&
+                            <input className="search-input" type="text"  onChange={activeSearch} placeholder="Títulos de filmes e séries" />
+                        }
+                        <Link onClick={activeInputSearch}><AiOutlineSearch size={'1.5em'} color={'white'}/></Link>
+                       
+                        
+                        {/* <AiFillHeart color={'white'} />
+                        <IoMdSettings color={'white'} /> */}
 
                 </div>
             </header>

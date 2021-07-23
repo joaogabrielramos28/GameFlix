@@ -45,3 +45,23 @@ header{
     opacity: .8;
     transition: .5s ease;
 }
+
+.search-input{
+    width: 250px;
+    outline: none;
+    border: none;
+    animation: inputGrowht .7s ease;
+    padding: 8px 10px;
+    background: rgba(0, 0, 0, 0.534);
+    color: #FFF;
+
+}
+
+
+@keyframes inputGrowht{
+    from{
+        width: 0;
+    }to{
+        width: 250px;
+    }
+}
